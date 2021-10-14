@@ -1,0 +1,9 @@
+apiVersion: "stable.example.com/v1"
+kind: cronTab
+metadata:
+  name: my-new-obj
+spec:
+  foo: "Bar"
+  cronSpec: "* * * * */5"
+  image: tasdidur/mini-server
+  replicas: 9
